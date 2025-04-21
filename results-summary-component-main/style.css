@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+    background-color: hsl(221, 100%, 96%);
+}
+.grid{
+    display: grid;
+    grid-template-columns: 368px 368px;
+    margin-top: 150px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.result{
+    background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    gap: 30px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.report{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.summary{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+    
+}
+.subject{
+    padding: 10px;
+    display:flex;
+    border-radius: 15px;
+    overflow: hidden;
+    gap: 10px;
+}
+.marks{
+    display:flex;
+    margin-left: auto;
+    gap: 5px;
+
+}
+.urresult{
+    display: inline;
+    color: hsl(241, 100%, 89%)
+}
+.score{
+    
+    width: 200px;
+    height: 200px;
+    
+    
+}
+.scored{
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: blueviolet;
+    background: linear-gradient(to top, hsla(241, 72%, 46%, 0),hsla(256, 72%, 46%, 1));
+    color: hsl(221, 100%, 96%,0.5);
+}
+.great{
+    display: inline;
+    color: hsl(0, 0%, 100%);
+}
+.achieved-score{
+    font-size: 70px;
+    color: hsl(0, 0%, 100%);
+}
+.text{
+    color: hsl(241, 100%, 89%)
+
+}
+.subject1{
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(0, 100%, 67%,0.08);
+}
+.subject2{
+    color:  hsl(39, 100%, 56%);
+    background-color:  hsl(39, 100%, 56%,0.08);
+}
+.subject3{
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 100%, 37%,0.08);
+
+}
+.subject4{
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 45%,0.08);
+}
+.btn{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    font-size: large;
+    color: hsl(0, 0%, 100%);
+}
+.btn:hover{
+    background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+.marks-obtain{
+    color: hsl(224, 30%, 27%);
+}
+.out-of{
+    color: hsl(224, 30%, 27%,0.5);
+}
+/* TAKE AWAYS FROM THIS CHALLENGE */
+
+/* flex-direction:column -> main axis:column, cross axis:row */
+/* flex-direction:row -> main axis:row, cross axis:column */
+
+/* 🔷 Main Axis (direction = row by default)
+Property	Description
+flex-direction	Main axis ko define karta hai (row, column, etc.)
+justify-content	Items ko main axis par align karta hai (start, center, end, space-between, etc.)
+flex-grow	Extra space ko main axis par fill karta hai
+flex-shrink	Items ko shrink karne deta hai main axis par jab jagah kam ho
+flex-basis	Item ka initial size set karta hai main axis par
+flex	Shorthand for flex-grow, flex-shrink, flex-basis
+🔶 Cross Axis (row → vertical, column → horizontal)
+
+Property	Description
+align-items	All items ko cross axis pe align karta hai (center, stretch, etc.)
+align-self	Single item ko cross axis pe align karta hai
+align-content	Multiple lines (wrap hone par) ke beech ke space ko cross axis pe adjust karta hai
+ */
+
+ /* Overflow content dikhta rahta hai
+→ Agar andar ka content border-radius ke bahar ja raha hai to wo dikhega jab tak overflow: hidden na lagao. */
+/* color ka change hota hua effect lane ke liye-> background: linear-gradient(to top/right,color1, color2); */
