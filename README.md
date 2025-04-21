@@ -1,2 +1,3 @@
 # frontend-mini-projects
-solving frontend mentor challenges
+solving frontend mentor challenges 
+
