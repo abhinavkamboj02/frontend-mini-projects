@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: hsl(0, 0%, 8%);
+        font-family: sans-serif;
+      }
+      .container {
+        margin: auto;
+        margin-top: 100px;
+        background-color: hsl(0, 0%, 12%);
+        max-width: 400px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5%;
+        padding: 20px;
+        gap: 10px;
+      }
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        margin-bottom: 10px;
+      }
+      .items {
+        align-self: center;
+        color: hsl(0, 0%, 100%);
+      }
+      .green-item {
+        color: hsl(75, 94%, 57%);
+        margin-bottom: 10px;
+      }
+      .btn {
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(0, 0%, 20%);
+        height: 40px;
+        max-width: 360px;
+        width: 90%;
+        border: none;
+        border-radius: 5%;
+      }
+      .btn:hover {
+        background-color: hsl(75, 94%, 57%);
+        color: hsl(0, 0%, 8%);
+        cursor: pointer;
+      }
+      /*  */
+      .attribution {
+        font-size: 11px;
+        color: hsl(0, 0%, 100%);
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="assets/images/avatar-jessica.jpeg"
+        alt="profile picture"
+        class="items"
+      />
+      <h3 class="items">Jessica Randall</h3>
+      <h6 class="items green-item">London, United Kingdom</h6>
+      <p class="items">"Front-end developer and avid reader."</p>
+      <button class="items btn">GitHub</button>
+      <button class="items btn">Frontend Mentor</button>
+      <button class="items btn">LinkedIn</button>
+      <button class="items btn">Twitter</button>
+      <button class="items btn">Instagram</button>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Abhinav Kamboj</a>.
+    </div>
+  </body>
+</html>
